@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inika', serif;
+    font-weight: bold;
+}
+
+
+
+.panelBody{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* background-color: #4158D0; */
+    background-image: linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+
+     /* background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%); */
+     /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);      */
+     /* background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%); */
+     /* background-image: linear-gradient(to left, #ec77ab 0%, #7873f5 100%); */
+
+     overflow: hidden;
+        
+}
+
+.sidePanel{
+    grid-column: 1/2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.topBar{
+    align-self: flex-start;
+}
+
+#logoutLogo{
+    width: 2rem;
+    margin: 1rem;
+    
+}
+
+#userLogo{
+    width: 7rem;
+}
+
+.menu{
+    margin-top: 4rem;
+    padding-bottom: 30rem;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #01044A;
+}
+
+.contentPanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2/3;
+    background-color: #ffffff;
+    width: 98%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: #01044A;
+}
+
+#inputField{
+    margin: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #01044A;
+    font-weight: 400;
+}
+
+.testButton{
+    background-color: #ffffff;
+    /* border: 2px solid #01044A; */
+    padding: 0.3rem 2.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #01044A;
+    
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    background-image: linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
