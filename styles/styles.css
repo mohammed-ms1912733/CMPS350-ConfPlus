@@ -51,8 +51,8 @@
     background-image: url("../images/Group\ 32.svg");
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-size: cover;
-    background-position: center;
+    background-size: 95%;
+    background-position: top right;
 
 
 }
@@ -80,14 +80,14 @@ h2 {
     color: #C850C0;
     width: 80%;
     padding-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 h3 {
     font-size: 1.1rem;
     color: #4158D0;
     padding-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 
@@ -177,6 +177,11 @@ h3 {
 
 .navigateToConfs2:hover #downArrow{
     transform: translateY(8px);
+}
+
+.conferencesSection{
+    background-color: #ffffff;
+    background-image: none;
 }
 
 .panelBody{
