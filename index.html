@@ -30,11 +30,11 @@
             
             <div class="mainContentAndImage">
                 <div class="mainText">
-                    <h1>Welcome to ConfPlus</h1>
-                    <h2>Simplify your conference planning with our all-in-one platform.</h2>
-                    <h3>Sign up now and let us help you make your next event a success.</h3>
+                    <h1 id="welcomeMessage">Welcome to ConfPlus</h1>
+                    <h2 id="welcomeMessage2">Simplify your conference planning with our all-in-one platform.</h2>
+                    <h3 id="welcomeMessage3">Sign up now and let us help you make your next event a success.</h3>
                 
-                    <div id="buttonBackground">
+                    <div class="buttonBackground">
                         <a href="" id="joinUsButton">Join Us</a>
                     </div>
                 </div>
@@ -46,24 +46,24 @@
 
             <div class="stats">
                 <div id="activeMembers">
-                    <p>Active members</p>
+                    <p class="statsTitle">Active members</p>
                     <p class="statNumber"><span>:</span>45000</p>
                 </div>
                 
                 <div id="activeOrganizers">
-                    <p>Active Organizers</p>
+                    <p class="statsTitle">Active Organizers</p>
                     <p class="statNumber"><span>:</span>52000</p>
                 </div>
                 
                 <div id="availableVenues">
-                    <p>Available Venues</p>
+                    <p class="statsTitle">Available Venues</p>
                     <p class="statNumber"><span>:</span>2000</p>
                 </div>
             </div>
 
             <div class="navigateToConfs">
                 <div class="navigateToConfs2">
-                    <p id="viewConfs">View conferences</p>
+                    <p id="viewConfs">View Conferences</p>
                     <img src="./images/downArrow.png" id="downArrow" alt="">    
                 </div>
             </div>
@@ -71,7 +71,8 @@
         </section>
 
         <section class="conferencesSection">
-            <h1>Conferences</h1>
+            <h1 id="conferencesHeader">Upcoming Conferences</h1>
+            
             <div class="searchAndSort">
                 
                 <div class="sortContainer">
@@ -83,7 +84,7 @@
                     </select>
                 </div>
                 
-                <div class="searchContainer">
+                <div class="textFieldContainer">
                     <label for="search">Search:</label>
                     <input type="search" id="search" placeholder="Search for conferences">        
                 
@@ -91,15 +92,286 @@
             </div>
 
             <div class="conferenceCards">
-                <div class="conferenceCard">
+                <!-- place cards here -->
+                <div class="conferenceCardBackground">
+                    <div class="conferenceCard">
+                        
+                        <div class="conferenceDataContainer">
+                            
+                            <div class="conferenceTopPart">
+                                <div class="conferenceHeaderContainer">
+                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
+                                   
+                                    <div class="conferenceLocationContainer">
+                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
+                                        <p class="conferenceLocation"> New York, New York
+                                            Columbia University</p>
+                                    </div>
+        
+                                    <div class="conferenceDateContainer">
+                                        <img src="./images/calendar.png" alt="" class="dateIcon">
+                                        <p class="conferenceDate">May 17-19, 2023</p>
+                                    </div>
+        
+                                </div>
+                                
+                                <div class="conferenceImageContainer">
+                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
+                                    <h2 class="presenterName">Dr. danah boyd</h2>
+                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
+                                </div>
+                            </div>
+        
+                            <div class="conferenceData">
+                                <h4 class="conferenceBrief">Brief:</h4>
+                                <div class="brief">
+                                   <p class="briefText">
+                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
+                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
+                                   </p>
+
+                                   <p class="teaser">
+                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
+                                    featuring some of the most prominent voices in the field!
+                                   </p> 
+                                </div>
+                            </div>
+                        
+                        </div>
                     
+                    </div>
+                
                 </div>
+
+                <div class="conferenceCardBackground">
+                    <div class="conferenceCard">
+                        
+                        <div class="conferenceDataContainer">
+                            
+                            <div class="conferenceTopPart">
+                                <div class="conferenceHeaderContainer">
+                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
+                                   
+                                    <div class="conferenceLocationContainer">
+                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
+                                        <p class="conferenceLocation"> New York, New York
+                                            Columbia University</p>
+                                    </div>
+        
+                                    <div class="conferenceDateContainer">
+                                        <img src="./images/calendar.png" alt="" class="dateIcon">
+                                        <p class="conferenceDate">May 17-19, 2023</p>
+                                    </div>
+        
+                                </div>
+                                
+                                <div class="conferenceImageContainer">
+                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
+                                    <h2 class="presenterName">Dr. danah boyd</h2>
+                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
+                                </div>
+                            </div>
+        
+                            <div class="conferenceData">
+                                <h4 class="conferenceBrief">Brief:</h4>
+                                <div class="brief">
+                                   <p class="briefText">
+                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
+                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
+                                   </p>
+
+                                   <p class="teaser">
+                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
+                                    featuring some of the most prominent voices in the field!
+                                   </p> 
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="conferenceCardBackground">
+                    <div class="conferenceCard">
+                        
+                        <div class="conferenceDataContainer">
+                            
+                            <div class="conferenceTopPart">
+                                <div class="conferenceHeaderContainer">
+                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
+                                   
+                                    <div class="conferenceLocationContainer">
+                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
+                                        <p class="conferenceLocation"> New York, New York
+                                            Columbia University</p>
+                                    </div>
+        
+                                    <div class="conferenceDateContainer">
+                                        <img src="./images/calendar.png" alt="" class="dateIcon">
+                                        <p class="conferenceDate">May 17-19, 2023</p>
+                                    </div>
+        
+                                </div>
+                                
+                                <div class="conferenceImageContainer">
+                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
+                                    <h2 class="presenterName">Dr. danah boyd</h2>
+                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
+                                </div>
+                            </div>
+        
+                            <div class="conferenceData">
+                                <h4 class="conferenceBrief">Brief:</h4>
+                                <div class="brief">
+                                   <p class="briefText">
+                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
+                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
+                                   </p>
+
+                                   <p class="teaser">
+                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
+                                    featuring some of the most prominent voices in the field!
+                                   </p> 
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="conferenceCardBackground">
+                    <div class="conferenceCard">
+                        
+                        <div class="conferenceDataContainer">
+                            
+                            <div class="conferenceTopPart">
+                                <div class="conferenceHeaderContainer">
+                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
+                                   
+                                    <div class="conferenceLocationContainer">
+                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
+                                        <p class="conferenceLocation"> New York, New York
+                                            Columbia University</p>
+                                    </div>
+        
+                                    <div class="conferenceDateContainer">
+                                        <img src="./images/calendar.png" alt="" class="dateIcon">
+                                        <p class="conferenceDate">May 17-19, 2023</p>
+                                    </div>
+        
+                                </div>
+                                
+                                <div class="conferenceImageContainer">
+                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
+                                    <h2 class="presenterName">Dr. danah boyd</h2>
+                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
+                                </div>
+                            </div>
+        
+                            <div class="conferenceData">
+                                <h4 class="conferenceBrief">Brief:</h4>
+                                <div class="brief">
+                                   <p class="briefText">
+                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
+                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
+                                   </p>
+
+                                   <!-- <p class="teaser">
+                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
+                                    featuring some of the most prominent voices in the field!
+                                   </p>  -->
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="feedbackPage">
+            <div class="contactUsData">
+                <h1 class="feedbackPageTitle">Got questions or feedback?</h1>
+                <p class="feedbackPageSubTitle">We'd love to hear from you! Our team is always here to help, so don't hesitate to reach out.</p>
+                
+                <div class="feedbackPageInputContainer">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">        
+                
+                </div>
+
+                <div class="feedbackPageInputContainer">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">        
+                
+                </div>
+
+                <div class="feedbackPageInputContainer">
+                    <label for="phoneNumber">Phone number:</label>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your phone number">        
+                
+                </div>
+               
+                <div class="newsletterContainer">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter?</label>    
+                </div>
+
+                <div id="buttonBackground" class="buttonBackground">
+                    <a href="" id="submit">Submit</a>
+                </div>
+
             </div>
 
+            <img src="./images/man-thinking-animate.svg" alt="" class="feedbackPageImage">
+        
         </section>
 
     </main>
 
+    <footer class="mainPageFooter">
+        <div class="thxMessageContainer">
+            <img src="./images/whiteLogoNew.svg" alt="">
+            <p class="thanksMessage">Thanks for visiting our website. <br>
+                You can email us at - <span><a href="emailto:ConfPlus@conferenes.com">ConfPlus@conferenes.com</a></span></p>
+        </div>
+        
+        <div class="socialMediaInfo">
+            <p class="Communication">Reach us on social media:</p>
+            
+            <div class="socialMediaIcons">
+                
+                <div >
+                    <a href="" class="conferenceDateContainer">
+                        <img src="./images/twitter.png" alt="" class="communicationIcons">
+                        <p class="communicationIconText">Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href=""  class="conferenceDateContainer">
+                        <img src="./images/instagram.png" alt="" class="communicationIcons">
+                        <p class="communicationIconText">Instagram</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="conferenceDateContainer">
+                        <img src="./images/facebook.png" alt="" class="communicationIcons">
+                        <p class="communicationIconText">Facebook</p>
+                    </a>
+                </div>
+
+            </div>
+
+    </footer>
 
 
 
