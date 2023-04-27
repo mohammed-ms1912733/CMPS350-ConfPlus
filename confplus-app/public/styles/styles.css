@@ -1,0 +1,636 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inika', serif;
+    font-weight: bold;
+    color: #01044A;
+}
+
+
+.mainBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeader{
+    display: flex;
+    padding: 1rem;
+}
+
+#mainLogo{
+    width: 13rem;
+}
+
+.mainHeader nav {
+    margin-left: 15rem;
+}
+
+.mainHeader ul {
+    display: flex;
+    list-style: none;
+    margin: 1.5rem;
+}
+
+.mainHeader li{
+    font-size: 1.2rem;
+    padding-right: 3rem;
+}
+
+.mainHeader li a{
+    text-decoration: none;
+    color: #0a2351;
+}
+
+.landingPageMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainBody {
+    background-image: url("../images/Group\ 32.svg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 95%;
+    background-position: top right;
+
+
+}
+
+.mainContentAndImage{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    
+}
+
+.mainText{
+    display: flex;
+    flex-direction: column;
+}
+
+#welcomeMessage {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #0a2351;
+}
+
+#welcomeMessage2 {
+    font-size: 1.4rem;
+    color: #C850C0;
+    width: 80%;
+    padding-left: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+#welcomeMessage3 {
+    font-size: 1.1rem;
+    color: #4158D0;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+#landingPic{
+    width: 30rem;
+}
+
+#joinUsButton, #submit, #loginButton {
+    background-color: #ffffff;
+    /* border: 2px solid #01044A; */
+    padding: 0.6rem 4rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #01044A;
+}
+
+.buttonBackground{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 2rem;
+    width: fit-content;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    transition: all 0.15s ease-in-out;    
+
+}
+
+.buttonBackground:hover{
+    transform: translateY(-1.5px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.stats{
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #C850C0;
+
+}
+
+#activeMembers, #activeOrganizers, #availableVenues {
+    /* margin: 1rem 7rem; */
+    margin-top: 1rem;
+    margin-left: 8rem;
+    margin-right: 5rem;
+}
+
+.statNumber{
+    font-size: 2.5rem;
+    color: #0a2351;
+}
+
+.statsTitle{
+    color: #C850C0;
+}
+
+.statNumber span {
+    color: #FFC100;
+}
+
+.navigateToConfs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 7rem;
+}
+
+.navigateToConfs p {
+    color: #ADADAD;
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+}
+
+.navigateToConfs2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#downArrow{
+    width: 1.3rem;
+    transition: all 0.30s ease-in-out;
+
+}
+
+.navigateToConfs2:hover #downArrow{
+    transform: translateY(8px);
+}
+
+.conferencesSection{
+    background-color: #ffffff;
+    background-image: none;
+    margin-top: 2rem;
+}
+
+#conferencesHeader{
+    font-size: 2.3rem;
+    margin-left: 8rem;
+}
+
+.searchAndSort{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sortContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 11rem;
+}
+
+.sortContainer label, .textFieldContainer label, .feedbackPageInputContainer label, .loginDataContainer label{
+    color: #C850C0;
+    margin-left: 0.2rem;
+}
+
+.textFieldContainer, .feedbackPageInputContainer, .loginDataContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 8rem;
+}
+
+#sort{
+    background-color: #ffffff;
+    border-color: #ADADAD;
+    border-width: 1.5px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2.5rem;
+}
+
+#search, #name, #email, #phoneNumber, #loginEmail, #password{
+    background-color: #ffffff;
+    border-color: #ADADAD;
+    border-width: 1.5px;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    width: 25rem;
+    height: 2.6rem;
+}
+
+.conferenceCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    justify-items: center;
+}
+
+.conferenceCardBackground{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: fit-content;
+    padding: 0.1rem;
+    border-radius: 2.1rem;
+    margin-bottom: 2rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.conferenceCardBackground:hover{
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.conferenceDataContainer{
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.conferenceCard{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    height: 33rem;
+}
+
+.conferenceTopPart{
+    display: flex;
+    flex-direction: row;
+}
+
+.conferenceHeaderContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conferenceTitle{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.presenterImage{
+    width: 5.5rem;
+}
+
+.conferenceLocationContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.conferenceDateContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.conferenceLocation, .conferenceDate {
+    font-size: 0.8rem;
+}
+
+.conferenceImageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.presenterName{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.presenterTitle{
+    font-size: 0.75rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+}
+
+
+.dateIcon, .locationIcon{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.conferenceData {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.conferenceBrief{
+    color: #C850C0;
+    font-size: 1.1rem;
+}
+
+.brief{
+    margin-top: 0.2rem;
+    max-width: 18rem;
+    font-size: 0.9rem;
+}
+
+.teaser{
+    margin-top: 3rem;
+}
+
+.feedbackPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.feedbackPageTitle{
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+
+.feedbackPageSubTitle{
+    text-align: center;
+    width: 22rem;
+    font-size: 1.4rem;
+    margin: 1.5rem 0rem;
+}
+
+.feedbackPageImage{
+    width: 22rem;
+}
+
+.contactUsData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedbackPageInputContainer{
+    margin: 0.5rem;
+}
+
+.newsletterContainer{
+    margin-top: 0.5rem;
+    margin-right: 12rem;
+}
+
+.feedbackPageInputContainer label, .newsletterContainer label{
+    font-size: 0.8rem;
+}
+
+.newsletterContainer label{
+    color: #C850C0;
+}
+
+#submit{
+    padding: 0.4rem 4rem;
+}
+
+#buttonBackground{
+    margin-top: 2rem;
+}
+
+.mainPageFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    
+    margin-top: 5rem;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+
+.communicationIcons{
+    width: 1.2rem;
+    margin-right: 0.5rem;
+
+}
+
+.thxMessageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanksMessage{
+    text-align: center;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+
+}
+
+.thanksMessage span a{
+    color: #01044A;
+    text-decoration: none;
+}
+
+.socialMediaInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMediaInfo a {
+    text-decoration: none;
+}
+
+.socialMediaIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Communication, .communicationIconText{
+    color: #ffffff;
+    font-size: 0.8rem;
+
+}
+
+.Communication{
+    font-size: 0.9rem;
+}
+
+.thxMessageContainer img{
+    width: 5rem;
+} 
+
+.communicationIconText{
+    font-size: 0.8rem;
+
+}
+
+.conferenceDateContainer{
+    margin-top: 1rem;
+}
+
+
+#loginPageBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.loginSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 12rem 3.5rem;
+    padding-top: 5rem;
+    border-radius: 1rem;
+    transition: all 0.25s ease-in-out;    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.loginSection:hover{
+    transform: translateY(-1.5px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+#loginLogo{
+    width: 10rem;
+    
+}
+
+#loginEmail, #password{
+    width: 20rem;
+    height: 2.2rem;
+}
+
+.loginDataContainer{
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+#loginDataContainer{
+    margin-top: 3rem;
+}
+
+.buttonBackground{
+    margin-top: 2.5rem;
+    margin-left: 0rem;
+}
+
+.loginDataContainer label{
+    font-size: 0.9rem;
+}
+
+#loginButton{
+    padding: 0.4rem 4rem;
+}
+
+.panelBody{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    height: 100vh;
+}
+
+.sidePanel{
+    grid-column: 1/2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.topBar{
+    align-self: flex-start;
+}
+
+#logoutLogo{
+    width: 2.5rem;
+    margin: 1rem;
+    
+}
+
+.userLogo{
+    width: 7rem;
+}
+
+.menu{
+    margin-top: 4rem;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0a2351;
+}
+
+.contentPanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2/3;
+    background-color: #ffffff;
+    width: 98%;
+    height: 97%;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+    border-radius: 0.5rem;
+    /* font-size: 2rem; */
+    /* color: #0a2351; */
+    /* width: 1200px;
+    height: 750px; */
+}
+
+#inputField{
+    margin: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #0a2351;
+    font-weight: 400;
+}
+
+.testButton{
+    background-color: #ffffff;
+    /* border: 2px solid #01044A; */
+    padding: 0.3rem 2.5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #01044A;
+    
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+

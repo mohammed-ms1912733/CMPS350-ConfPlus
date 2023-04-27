@@ -1,0 +1,70 @@
+[
+    {
+        "name": "The Future of AI in Healthcare",
+        "place": "San Francisco, California",
+        "venue": "Moscone Center",
+        "date": "November 10-12, 2023",
+        "speaker": "Dr. Fei-Fei Li, Director of the Stanford Artificial Intelligence Lab",
+        "special": "Keynote speech on the latest advances in AI for healthcare",
+        "brief": "This conference brings together leading researchers, practitioners, and policymakers to explore the potential of AI in transforming healthcare delivery and patient outcomes. Topics include medical imaging, clinical decision-making, drug discovery, and patient engagement.",
+        "teaser": "Don't miss out on the opportunity to learn about the cutting-edge developments in AI for healthcare from the foremost experts in the field!"
+     },
+
+     {
+        "name": "The Ethics of Big Data",
+        "place": "New York, New York",
+        "venue": "Columbia University",
+        "date": "May 17-19, 2023",
+        "speaker": "Dr. danah boyd Principal Researcher at Microsoft Research and Founder of Data & Society",
+        "special": "Panel discussion on the ethical implications of big data",
+        "brief": "This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, government, and academia. Topics include privacy, surveillance, bias, and transparency.",
+        "teaser": "Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, featuring some of the most prominent voices in the field!"
+     },
+
+
+     {
+        "name": "Decolonizing Science",
+        "place": "Toronto, Canada",
+        "venue": "University of Toronto",
+        "date": "August 3-5, 2023",
+        "speaker": "Dr. Chanda Prescod-Weinstein, Theoretical Physicist and Feminist Science Studies Scholar",
+        "special": "Workshop on decolonizing science education",
+        "brief": "This conference explores the ways in which colonialism has shaped the practice and culture of science, and how we can work to promote more inclusive and equitable scientific communities. Topics include Indigenous knowledge, diversity and inclusion in STEM, and the politics of scientific knowledge production.",
+        "teaser": "Join us for a groundbreaking conference on decolonizing science, featuring leading scholars and practitioners working to promote more just and equitable scientific practices and communities!"
+     },
+
+
+     {
+        "name": "The Future of Work",
+        "place": "Berlin, Germany",
+        "venue": "Technical University of Berlin",
+        "date": "September 12-14, 2023",
+        "speaker": "Dr. Erik Brynjolfsson, Director of the MIT Initiative on the Digital Economy",
+        "special": "Panel discussion on the impact of automation and AI on employment",
+        "brief": "This conference brings together academics, policymakers, and business leaders to explore the implications of technological change for the nature and organization of work. Topics include the gig economy, skill mismatches, and the role of policy in shaping the future of work.",
+        "teaser": "Don't miss out on the opportunity to join the conversation on the future of work and learn about the latest research and thinking on this crucial topic!"
+     },
+
+     {
+        "name": "The Psychology of Creativity",
+        "place": "Paris, France",
+        "venue": "Sorbonne University",
+        "date": "October 8-10, 2023",
+        "speaker": "Dr. Mihaly Csikszentmihalyi, Distinguished Professor of Psychology and Management at Claremont Graduate University",
+        "special": "Workshop on the science of flow and creative performance",
+        "brief": "This conference explores the psychological and social factors that underlie creativity, from individual differences in cognitive processes to the role of culture and social context. Topics include creativity in the arts and sciences, innovation and entrepreneurship, and the measurement and assessment of creative potential.",
+        "teaser": "Join us for an inspiring and intellectually stimulating conference on the psychology of creativity, featuring some of the leading researchers and practitioners in the field!"
+     },
+
+     {
+        "name": "The Future of Democracy",
+        "place": "Washington, D.C., United States",
+        "venue": "Georgetown University",
+        "date": "April 15-17, 2023",
+        "speaker": "Dr. Francis Fukuyama, Olivier Nomellini Senior Fellow at Stanford University's Freeman Spogli Institute for International Studies",
+        "special": "Panel discussion on the challenges to democratic governance in the 21st century",
+        "brief": "This conference examines the future of democratic governance, from the rise of authoritarian populism to the impact of social media and digital technologies on political participation and representation. Topics include the role of civil society, the media, and international institutions in promoting democratic values and norms.",
+        "teaser": "Join us for a timely and important conference on the future of democracy, featuring some of the foremost experts and scholars in the field!"
+     }
+     
+]
