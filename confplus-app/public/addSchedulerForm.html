@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles\styles.css" />
+
+    <title>Add a Schedule</title>
+  </head>
+  <body class="panelBody">
+    <div class="panelTopPart">
+      <div class="userInformationContainer">
+        <div class="userPicContainer">
+          <img src="./images/organizerMaleLogo.png" alt="" class="userLogo" />
+        </div>
+        <div class="userInfromation">
+          <p class="userName">Mohammed Salah</p>
+          <div class="roleAndActivity">
+            <p class="role">Organizer</p>
+            <img src="./images/Active.svg" alt="" class="userActivity" />
+          </div>
+        </div>
+      </div>
+
+      <h2 class="addScheduleTitle">Add a Schedule</h2>
+
+      <!-- <div id="addScheduleBackground" class="buttonBackground">
+        <a href="" id="addSchedule">Add a Schedule</a>
+      </div> -->
+
+      <a href="" class="logoutLogoContainer">
+        <img src="./images/newNewlogout.png" alt="" class="logoutLogo"
+      /></a>
+    </div>
+
+    <div class="editorPanelView">
+      <h2>Enter The Schedule Details:</h2>
+
+      <div>
+        <div class="mainScheduleData">
+          <div class="editorInputContainer">
+            <label for="scheduleTitle">Title:</label>
+            <input type="text" id="scheduleTitle" placeholder="Enter the title" />
+          </div>
+  
+          <div class="editorInputContainer">
+            <label for="scheduleLocation">Location:</label>
+            <input
+              type="text"
+              id="scheduleLocation"
+              placeholder="Enter the location"
+            />
+          </div>
+  
+          <div class="editorInputContainer">
+            <label for="scheduleDate">Date:</label>
+            <input type="date" id="scheduleDate" />
+          </div>
+  
+          <div class="editorInputContainer">
+            <label for="scheduleBrief">Brief:</label>
+            <textarea
+              name="scheduleBrief"
+              id="scheduleBrief"
+              cols="40"
+              rows="8"
+              placeholder="Write a something about your schedule"
+            ></textarea>
+          </div>
+  
+          <div class="editorInputContainer">
+            <label for="scheduleTeaser">Teaser:</label>
+            <input type="text" id="scheduleTeaser" placeholder="Enter a teaser" />
+          </div>
+        </div>
+      </div>
+
+      
+
+        <div class="sessionTitleContainer">
+          <h2>Sessions:</h2>
+          <div class="editorInputContainer">
+            <label for="noOfSessions">Select the number of sessions:</label>
+            <select name="noOfSessions" id="noOfSessions">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+        </div>
+      
+
+      <div class="editorSessionsContainer">
+        <!-- sessions go here -->
+        <div class="editorSession">
+          <h3 class="theSessionTitle">Session: <span class="theSessionNumber">1</span></h3>
+
+          <div class="fromAndToContainers">
+            <div class="editorInputContainer">
+              <label for="scheduleFromTime">From:</label>
+              <input type="time" id="scheduleFromTime" />
+            </div>
+  
+            <div class="editorInputContainer">
+              <label for="scheduleToTime">To:</label>
+              <input type="time" id="scheduleToTime" />
+            </div>  
+          </div>
+
+          
+          <div class="presenterTitleContainer">
+            <h3 class="presentersHeader">Presenters:</h3>
+            <div class="editorInputContainer">
+              <label for="noOfPresenters"
+                >Select the number of presenters:</label
+              >
+              <select name="noOfPresenters" id="noOfPresenters">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="editorPresentersContainer">
+            <!-- presenters go here -->
+
+            <div class="editorPresenter">
+              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
+              
+              <div class="editorInputContainer">
+                <label for="choosePresenter">Choose a presenter:</label>
+                <select name="choosePresenter" id="choosePresenter">
+                  <option value="Mohammed">Mohammed</option>
+                  <option value="Ali">Ali</option>
+                  <option value="Othman">Othman</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="editorPresenter">
+              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
+              
+              <div class="editorInputContainer">
+                <label for="choosePresenter">Choose a presenter:</label>
+                <select name="choosePresenter" id="choosePresenter">
+                  <option value="Mohammed">Mohammed</option>
+                  <option value="Ali">Ali</option>
+                  <option value="Othman">Othman</option>
+                </select>
+              </div>
+            </div>
+
+            
+            
+
+          </div>
+
+        </div>
+
+        <div class="editorSession">
+          <h3 class="theSessionTitle">Session: <span class="theSessionNumber">1</span></h3>
+
+          <div class="fromAndToContainers">
+            <div class="editorInputContainer">
+              <label for="scheduleFromTime">From:</label>
+              <input type="time" id="scheduleFromTime" />
+            </div>
+  
+            <div class="editorInputContainer">
+              <label for="scheduleToTime">To:</label>
+              <input type="time" id="scheduleToTime" />
+            </div>  
+          </div>
+
+          
+          <div class="presenterTitleContainer">
+            <h3 class="presentersHeader">Presenters:</h3>
+            <div class="editorInputContainer">
+              <label for="noOfPresenters"
+                >Select the number of presenters:</label
+              >
+              <select name="noOfPresenters" id="noOfPresenters">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="editorPresentersContainer">
+            <!-- presenters go here -->
+
+            <div class="editorPresenter">
+              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
+              
+              <div class="editorInputContainer">
+                <label for="choosePresenter">Choose a presenter:</label>
+                <select name="choosePresenter" id="choosePresenter">
+                  <option value="Mohammed">Mohammed</option>
+                  <option value="Ali">Ali</option>
+                  <option value="Othman">Othman</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="editorPresenter">
+              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
+              
+              <div class="editorInputContainer">
+                <label for="choosePresenter">Choose a presenter:</label>
+                <select name="choosePresenter" id="choosePresenter">
+                  <option value="Mohammed">Mohammed</option>
+                  <option value="Ali">Ali</option>
+                  <option value="Othman">Othman</option>
+                </select>
+              </div>
+            </div>
+
+            
+            
+
+          </div>
+
+        </div>
+        
+        
+
+      </div>
+      <div class="submitScheduleButtonContainer">
+        <div id="cancelScheduleBackground" class="buttonBackground">
+          <a href="./panel.html" id="cancelSchedule">Cancel</a>
+        </div>
+
+        <div id="submitScheduleBackground" class="buttonBackground">
+          <a href="" id="submitSchedule">Submit</a>
+      </div>
+    </div>
+
+    <!-- js link -->
+    <script src="script\index.js"></script>
+  </body>
+</html>
