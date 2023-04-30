@@ -4,7 +4,7 @@ const SCHEDULES_URL = "api/schedules";
 const PRESENTERS_URL = "api/presenters";
 const DATES_URL = "api/dates";
 const LOCATIONS_URL = "api/locations";
-const PAPERS_URL = "api/informations";
+// const PAPERS_URL = "api/informations";
 
 // console.log("body");
 
@@ -48,11 +48,11 @@ async function getLocations() {
     return locations;
 }
 
-async function getPapers() {
-    const response = await fetch(PAPERS_URL);
-    const papers = await response.json();
-    return papers;
-}
+// async function getPapers() {
+//     const response = await fetch(PAPERS_URL);
+//     const papers = await response.json();
+//     return papers;
+// }
 
 //login button
 const loginBtn = document.querySelector("#loginButton");
@@ -508,6 +508,12 @@ if (window.location.pathname === "/AuthorPanel.html") {
         const papers = await getPapers();
         console.log(papers);
 
+    });
+}
+
+if (window.location.pathname === "/index.html") {
+    document.addEventListener("DOMContentLoaded", async () => {
+        
     });
 }
 
