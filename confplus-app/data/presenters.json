@@ -8,11 +8,11 @@
     "available": true
   },
   {
-    "id": 2,
-    "fname": "Jane",
-    "lname": "Doe",
-    "img": "https://example.com/images/jane-doe.jpg",
-    "special": "Data Science",
+    "id": "2",
+    "fname": "John",
+    "lname": "Smith",
+    "img": "https://example.com/images/john-smith.jpg",
+    "special": "Web Development",
     "available": true
   },
   {

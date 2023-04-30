@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles\styles.css" />
+
+    <title>Panel</title>
+  </head>
+  <body class="panelBody">
+    <div class="panelTopPart">
+      <div class="userInformationContainer">
+        <div class="userPicContainer">
+
+        </div>
+        <div class="userInfromation">
+          <p class="userName"></p>
+          <div class="roleAndActivity">
+            <p class="role">Author</p>
+            <img src="./images/Active.svg" alt="" class="userActivity" />
+          </div>
+        </div>
+      </div>
+
+      <div class="panelSearchAndSort">
+        <div class="panelSortContainer">
+          <label for="sort">Sort:</label>
+          <select name="sort-by" id="sort">
+            <option value="date">Date</option>
+            <option value="name">Name</option>
+            <option value="location">Location</option>
+          </select>
+        </div>
+
+        <div class="panelTextFieldContainer">
+          <label for="search">Search:</label>
+          <input
+            type="search"
+            id="search"
+            placeholder="Search for conferences"
+          />
+        </div>
+      </div>
+
+      <div id="addScheduleBackground" class="buttonBackground">
+        <a href="" id="addPaper">Add a Paper</a>
+      </div>
+
+      <a href="./index.html" class="logoutLogoContainer"
+        ><img src="./images/newNewlogout.png" alt="" class="logoutLogo"
+      /></a>
+    </div>
+
+    <div class="panelView">
+      <!-- cards go here -->
+
+    </div>
+
+    <!-- js link -->
+    <script src="script\index.js"></script>
+  </body>
+</html>

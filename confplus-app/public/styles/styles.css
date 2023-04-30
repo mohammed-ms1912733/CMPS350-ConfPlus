@@ -8,6 +8,7 @@
 }
 
 
+
 .mainBody{
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 4rem;
+    align-items: center;
     
 }
 
@@ -96,7 +98,7 @@
     width: 30rem;
 }
 
-#joinUsButton, #submit, #loginButton,#addSchedule, #editSchedule, #deleteSchedule, #cancelSchedule, #submitSchedule{
+#joinUsButton, #submit, #loginButton,#addSchedule, #editSchedule, #deleteSchedule, #cancelSchedule, #submitSchedule,#addPaper{
     background-color: #ffffff;
     /* border: 2px solid #01044A; */
     padding: 0.6rem 4rem;
@@ -157,8 +159,12 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    margin-top: 7rem;
+    margin-top: 11rem;
 }
+
+.navigateToConfs a {
+    text-decoration: none;
+} 
 
 .navigateToConfs p {
     color: #ADADAD;
@@ -533,6 +539,10 @@
     margin-left: 0rem;
 }
 
+#joinUsContainerID{
+    margin-left: 2rem;
+}
+
 .loginDataContainer label{
     font-size: 0.9rem;
 }
@@ -614,7 +624,7 @@
     color: #C850C0;
 }
 
-#addSchedule{
+#addSchedule, #addPaper{
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
 }
@@ -642,9 +652,11 @@
     display: flex;
     flex-direction: column;
     max-width: 25rem;
+    height: 32rem;
     background-color: #ffffff;
     border-radius: 3rem;
     padding: 1rem;
+
 }
 
 .scheduleCard h4 {
@@ -668,11 +680,15 @@
 }
 
 .sessionsContainer{
-
+    overflow-y: scroll ;
 }
 
-.presentersContainer{
 
+
+.presentersContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .panelView{
@@ -718,7 +734,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: #01044A 1px solid;
+    /* border: #01044A 1px solid; */
     max-width: 10rem;
     text-align: center;
 }
@@ -742,10 +758,12 @@
 .scheduleCardBackGround{
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     width: 25rem;
+    height: fit-content;
     padding: 0.1rem;
     border-radius: 3rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: all 0.15s ease-in-out;
+    margin-top: 1.5rem;
 }
 
 .scheduleCardBackGround:hover{
@@ -761,6 +779,32 @@
 .editorPanelView{
 
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #01044A;
+    border-radius: 10px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4158D0;
+  }
 
 .editorPanelView h2{
     margin-left: 1rem;

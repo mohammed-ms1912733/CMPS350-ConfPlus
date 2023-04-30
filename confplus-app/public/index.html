@@ -17,12 +17,12 @@
     <header class="mainHeader">
         <a href=""><img src="./images/Logo.svg" alt="" id="mainLogo"></a>
         
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#feedbackPage">Contact us</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <main class="landingPageMain">
@@ -34,7 +34,7 @@
                     <h2 id="welcomeMessage2">Simplify your conference planning with our all-in-one platform.</h2>
                     <h3 id="welcomeMessage3">Sign up now and let us help you make your next event a success.</h3>
                 
-                    <div class="buttonBackground">
+                    <div class="buttonBackground" id="joinUsContainerID">
                         <a href="./login.html" id="joinUsButton">Join Us</a>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 </div>    
             </div>
 
-            <div class="stats">
+            <!-- <div class="stats">
                 <div id="activeMembers">
                     <p class="statsTitle">Active members</p>
                     <p class="statNumber"><span>:</span>45000</p>
@@ -59,18 +59,20 @@
                     <p class="statsTitle">Available Venues</p>
                     <p class="statNumber"><span>:</span>2000</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="navigateToConfs">
-                <div class="navigateToConfs2">
-                    <p id="viewConfs">View Conferences</p>
-                    <img src="./images/downArrow.png" id="downArrow" alt="">    
-                </div>
+                <a href="#conferencesSection">
+                    <div class="navigateToConfs2">
+                        <p id="viewConfs">View Conferences</p>
+                        <img src="./images/downArrow.png" id="downArrow" alt="">    
+                    </div>
+                </a>
             </div>
 
         </section>
 
-        <section class="conferencesSection">
+        <section class="conferencesSection" id="conferencesSection">
             <h1 id="conferencesHeader">Upcoming Conferences</h1>
             
             <div class="searchAndSort">
@@ -93,205 +95,7 @@
 
             <div class="conferenceCards">
                 <!-- place cards here -->
-                <div class="conferenceCardBackground">
-                    <div class="conferenceCard">
-                        
-                        <div class="conferenceDataContainer">
-                            
-                            <div class="conferenceTopPart">
-                                <div class="conferenceHeaderContainer">
-                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
-                                   
-                                    <div class="conferenceLocationContainer">
-                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
-                                        <p class="conferenceLocation"> New York, New York
-                                            Columbia University</p>
-                                    </div>
-        
-                                    <div class="conferenceDateContainer">
-                                        <img src="./images/calendar.png" alt="" class="dateIcon">
-                                        <p class="conferenceDate">May 17-19, 2023</p>
-                                    </div>
-        
-                                </div>
-                                
-                                <div class="conferenceImageContainer">
-                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
-                                    <h2 class="presenterName">Dr. danah boyd</h2>
-                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
-                                </div>
-                            </div>
-        
-                            <div class="conferenceData">
-                                <h4 class="conferenceBrief">Brief:</h4>
-                                <div class="brief">
-                                   <p class="briefText">
-                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
-                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
-                                   </p>
 
-                                   <p class="teaser">
-                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
-                                    featuring some of the most prominent voices in the field!
-                                   </p> 
-                                </div>
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="conferenceCardBackground">
-                    <div class="conferenceCard">
-                        
-                        <div class="conferenceDataContainer">
-                            
-                            <div class="conferenceTopPart">
-                                <div class="conferenceHeaderContainer">
-                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
-                                   
-                                    <div class="conferenceLocationContainer">
-                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
-                                        <p class="conferenceLocation"> New York, New York
-                                            Columbia University</p>
-                                    </div>
-        
-                                    <div class="conferenceDateContainer">
-                                        <img src="./images/calendar.png" alt="" class="dateIcon">
-                                        <p class="conferenceDate">May 17-19, 2023</p>
-                                    </div>
-        
-                                </div>
-                                
-                                <div class="conferenceImageContainer">
-                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
-                                    <h2 class="presenterName">Dr. danah boyd</h2>
-                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
-                                </div>
-                            </div>
-        
-                            <div class="conferenceData">
-                                <h4 class="conferenceBrief">Brief:</h4>
-                                <div class="brief">
-                                   <p class="briefText">
-                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
-                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
-                                   </p>
-
-                                   <p class="teaser">
-                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
-                                    featuring some of the most prominent voices in the field!
-                                   </p> 
-                                </div>
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="conferenceCardBackground">
-                    <div class="conferenceCard">
-                        
-                        <div class="conferenceDataContainer">
-                            
-                            <div class="conferenceTopPart">
-                                <div class="conferenceHeaderContainer">
-                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
-                                   
-                                    <div class="conferenceLocationContainer">
-                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
-                                        <p class="conferenceLocation"> New York, New York
-                                            Columbia University</p>
-                                    </div>
-        
-                                    <div class="conferenceDateContainer">
-                                        <img src="./images/calendar.png" alt="" class="dateIcon">
-                                        <p class="conferenceDate">May 17-19, 2023</p>
-                                    </div>
-        
-                                </div>
-                                
-                                <div class="conferenceImageContainer">
-                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
-                                    <h2 class="presenterName">Dr. danah boyd</h2>
-                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
-                                </div>
-                            </div>
-        
-                            <div class="conferenceData">
-                                <h4 class="conferenceBrief">Brief:</h4>
-                                <div class="brief">
-                                   <p class="briefText">
-                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
-                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
-                                   </p>
-
-                                   <p class="teaser">
-                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
-                                    featuring some of the most prominent voices in the field!
-                                   </p> 
-                                </div>
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="conferenceCardBackground">
-                    <div class="conferenceCard">
-                        
-                        <div class="conferenceDataContainer">
-                            
-                            <div class="conferenceTopPart">
-                                <div class="conferenceHeaderContainer">
-                                    <h1 class="conferenceTitle">The Ethics of Big Data</h1>
-                                   
-                                    <div class="conferenceLocationContainer">
-                                        <img src="./images/location-pin.png" alt="" class="locationIcon">
-                                        <p class="conferenceLocation"> New York, New York
-                                            Columbia University</p>
-                                    </div>
-        
-                                    <div class="conferenceDateContainer">
-                                        <img src="./images/calendar.png" alt="" class="dateIcon">
-                                        <p class="conferenceDate">May 17-19, 2023</p>
-                                    </div>
-        
-                                </div>
-                                
-                                <div class="conferenceImageContainer">
-                                    <img src="./images/Group 10.svg" alt="" class="presenterImage">
-                                    <h2 class="presenterName">Dr. danah boyd</h2>
-                                    <h3 class="presenterTitle">Principal Researcher at Microsoft Research and Founder of Data & Society</p>
-                                </div>
-                            </div>
-        
-                            <div class="conferenceData">
-                                <h4 class="conferenceBrief">Brief:</h4>
-                                <div class="brief">
-                                   <p class="briefText">
-                                    This conference examines the ethical challenges and opportunities presented by the increasing availability and use of big data in fields such as business, 
-                                    government, and academia. Topics include privacy, surveillance, bias, and transparency.
-                                   </p>
-
-                                   <!-- <p class="teaser">
-                                    Join us for an engaging and thought-provoking discussion on the ethical dimensions of big data, 
-                                    featuring some of the most prominent voices in the field!
-                                   </p>  -->
-                                </div>
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
             
             </div>
         </section>

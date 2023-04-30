@@ -30,5 +30,56 @@
         ]
       }
     ]
+  },
+
+  {
+    "id": "1",
+    "title": "title2",
+    "location": "location2",
+    "date": "date2",
+    "brief": "brief2",
+    "teaser": "teaser2",
+    "paperEvaluation": "paperEvaluation2",
+    "sessions": [
+      {
+        "id": "1",
+        "from": "from1",
+        "to": "to1",
+        "presenters": [
+          {
+            "id": "1",
+            "fname": "fname1",
+            "lname": "lname1",
+            "img": "img1",
+            "special": "special1"
+          },
+          {
+            "id": 12860,
+            "fname": "fname2",
+            "lname": "lname2",
+            "img": "img2",
+            "special": "special2"
+          },
+
+          {
+            "id": 12860,
+            "fname": "fname2",
+            "lname": "lname2",
+            "img": "img2",
+            "special": "special2"
+          },
+
+          {
+            "id": 12860,
+            "fname": "fname2",
+            "lname": "lname2",
+            "img": "img2",
+            "special": "special2"
+          }
+
+        ]
+      }
+    ]
   }
+
 ]
