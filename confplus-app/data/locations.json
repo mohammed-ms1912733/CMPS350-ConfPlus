@@ -1,1 +1,19 @@
-[{"id":1,"locationName":"Female Engineering Building C07-145","available":true},{"id":2,"locationName":"CSE Meeting Room BCR-E104","available":true},{"id":3,"locationName":"QU Library B13-201","available":false}]
+[
+    {
+        "id": 1,
+        "locationName": "Female Engineering Building C07-145",
+        "available": true
+    },
+    { "id": 2, "locationName": "CSE Meeting Room BCR-E104", "available": true },
+    { "id": 3, "locationName": "QU Library B13-201", "available": true },
+    {
+        "id": 4,
+        "locationName": "Male Business and Economics Building B05-201",
+        "available": true
+    },
+    {
+        "id": 5,
+        "locationName": "College of Law Building L03-201",
+        "available": true
+    }
+]

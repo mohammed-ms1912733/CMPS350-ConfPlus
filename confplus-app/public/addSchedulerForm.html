@@ -37,7 +37,7 @@
         <a href="" id="addSchedule">Add a Schedule</a>
       </div> -->
 
-      <a href="" class="logoutLogoContainer">
+      <a href="./index.html" class="logoutLogoContainer">
         <img src="./images/newNewlogout.png" alt="" class="logoutLogo"
       /></a>
     </div>
@@ -53,19 +53,23 @@
           </div>
   
           <div class="editorInputContainer">
-            <label for="scheduleLocation">Location:</label>
-            <input
-              type="text"
-              id="scheduleLocation"
-              placeholder="Enter the location"
-            />
+            <label for="selectLocation"
+              >Select from the available Location:</label>
+
+            <select name="selectLocation" id="selectLocation">
+              
+            </select>
           </div>
-  
+          
           <div class="editorInputContainer">
-            <label for="scheduleDate">Date:</label>
-            <input type="date" id="scheduleDate" />
+            <label for="selectDate"
+              >Select from the available Dates:</label>
+
+            <select name="selectDate" id="selectDate">
+              
+            </select>
           </div>
-  
+          
           <div class="editorInputContainer">
             <label for="scheduleBrief">Brief:</label>
             <textarea
@@ -94,7 +98,7 @@
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
-              <option value="3">4</option>
+              <option value="4">4</option>
             </select>
           </div>
         </div>
@@ -134,112 +138,25 @@
 
           <div class="editorPresentersContainer">
             <!-- presenters go here -->
-
             <div class="editorPresenter">
               <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
               
               <div class="editorInputContainer">
                 <label for="choosePresenter">Choose a presenter:</label>
-                <select name="choosePresenter" id="choosePresenter">
-                  <option value="Mohammed">Mohammed</option>
-                  <option value="Ali">Ali</option>
-                  <option value="Othman">Othman</option>
+                <select name="choosePresenter" id="choosePresenter" class="choosePresenter">
+                  <!-- presenters list -->
+
                 </select>
               </div>
             </div>
-
-            <div class="editorPresenter">
-              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
-              
-              <div class="editorInputContainer">
-                <label for="choosePresenter">Choose a presenter:</label>
-                <select name="choosePresenter" id="choosePresenter">
-                  <option value="Mohammed">Mohammed</option>
-                  <option value="Ali">Ali</option>
-                  <option value="Othman">Othman</option>
-                </select>
-              </div>
-            </div>
-
-            
-            
-
           </div>
 
         </div>
-
-        <div class="editorSession">
-          <h3 class="theSessionTitle">Session: <span class="theSessionNumber">1</span></h3>
-
-          <div class="fromAndToContainers">
-            <div class="editorInputContainer">
-              <label for="scheduleFromTime">From:</label>
-              <input type="time" id="scheduleFromTime" />
-            </div>
-  
-            <div class="editorInputContainer">
-              <label for="scheduleToTime">To:</label>
-              <input type="time" id="scheduleToTime" />
-            </div>  
-          </div>
-
-          
-          <div class="presenterTitleContainer">
-            <h3 class="presentersHeader">Presenters:</h3>
-            <div class="editorInputContainer">
-              <label for="noOfPresenters"
-                >Select the number of presenters:</label
-              >
-              <select name="noOfPresenters" id="noOfPresenters">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="editorPresentersContainer">
-            <!-- presenters go here -->
-
-            <div class="editorPresenter">
-              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
-              
-              <div class="editorInputContainer">
-                <label for="choosePresenter">Choose a presenter:</label>
-                <select name="choosePresenter" id="choosePresenter">
-                  <option value="Mohammed">Mohammed</option>
-                  <option value="Ali">Ali</option>
-                  <option value="Othman">Othman</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="editorPresenter">
-              <h3>Presenter: <span class="thePresenterNumber">1</span></h3>
-              
-              <div class="editorInputContainer">
-                <label for="choosePresenter">Choose a presenter:</label>
-                <select name="choosePresenter" id="choosePresenter">
-                  <option value="Mohammed">Mohammed</option>
-                  <option value="Ali">Ali</option>
-                  <option value="Othman">Othman</option>
-                </select>
-              </div>
-            </div>
-
-            
-            
-
-          </div>
-
-        </div>
-        
-        
 
       </div>
       <div class="submitScheduleButtonContainer">
         <div id="cancelScheduleBackground" class="buttonBackground">
-          <a href="./panel.html" id="cancelSchedule">Cancel</a>
+          <a href="./OrganizerPanel.html" id="cancelSchedule">Cancel</a>
         </div>
 
         <div id="submitScheduleBackground" class="buttonBackground">
