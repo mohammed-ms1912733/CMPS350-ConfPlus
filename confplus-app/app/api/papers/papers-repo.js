@@ -39,6 +39,20 @@ class PaperRepo {
             throw new Error("Paper not found");
         }
     }
+
+    //add review to paper as an object 
+    async addReview(review, id) {
+        const papers = await this.getPapers();
+        const index = papers.findIndex((s) => s.id == id);
+        if (index > -1) {
+            papers[index].reviews = review;
+            await fs.writeFile(papersPath, JSON.stringify(papers));
+        } else {
+            throw new Error("Paper not found");
+        }
+    }
+    
+
 }
 
 export default new PaperRepo();
