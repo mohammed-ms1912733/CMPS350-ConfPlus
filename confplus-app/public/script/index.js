@@ -363,29 +363,6 @@ if (window.location.pathname === "/addSchedulerForm.html") {
             }
         });
 
-        // const presentersNumberSelect = document.querySelector("#noOfPresenters");
-        // presentersNumberSelect.addEventListener("change", (e) => {
-        //     const selectedPresenters = parseInt(e.target.value);
-        //     const existingPresenters = document.querySelectorAll('.editorPresenter').length;
-
-        //     if (selectedPresenters > existingPresenters) {
-        //         // Add more presenter elements
-        //         for (let i = existingPresenters + 1; i <= selectedPresenters; i++) {
-        //             generatePresenterHTML(i);
-        //         }
-        //     }
-
-        //     else if (selectedPresenters < existingPresenters) {
-        //         // Remove extra presenter elements
-        //         const presentersToRemove = existingPresenters - selectedPresenters;
-        //         const presenterElements = document.querySelectorAll('.editorPresenter');
-        //         for (let i = existingPresenters - 1; i >= selectedPresenters; i--) {
-        //             presenterElements[i].remove();
-        //         }
-        //     }
-
-        // });
-
         const editorSessionsContainer = document.querySelector(
             ".editorSessionsContainer"
         );
