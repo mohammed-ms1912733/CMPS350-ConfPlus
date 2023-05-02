@@ -186,11 +186,6 @@ function scheduleTemplate(schedule) {
 
         session.presenters.forEach((presenter) => {
             presenterHTML += `<div class="presenter">
-            <img
-              src="${presenter.img}"
-              alt=""
-              class="presenterPic"
-            />
             <p class="presenterName">${presenter.fname} ${presenter.lname}</p>
             <p class="presenterTitle">${presenter.special}</p>
           </div>`;
