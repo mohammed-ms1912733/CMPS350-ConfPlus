@@ -17,14 +17,12 @@
                         "id": "1",
                         "fname": "Dr. Jane",
                         "lname": "Smith",
-                        "img": "https://example.com/img1.jpg",
                         "special": "Quantum Computing Expert"
                     },
                     {
                         "id": "2",
                         "fname": "Dr. John",
                         "lname": "Doe",
-                        "img": "https://example.com/img2.jpg",
                         "special": "Artificial Intelligence Expert"
                     }
                 ]
@@ -38,14 +36,12 @@
                         "id": "3",
                         "fname": "Dr. Sarah",
                         "lname": "Lee",
-                        "img": "https://example.com/img3.jpg",
                         "special": "Quantum Computing Researcher"
                     },
                     {
                         "id": "4",
                         "fname": "Dr. Michael",
                         "lname": "Chen",
-                        "img": "https://example.com/img4.jpg",
                         "special": "AI Ethics Expert"
                     }
                 ]
@@ -71,14 +67,12 @@
                         "id": "1",
                         "fname": "Dr. Samantha",
                         "lname": "Johnson",
-                        "img": "https://example.com/img1.jpg",
                         "special": "Renewable Energy Expert"
                     },
                     {
                         "id": "2",
                         "fname": "Dr. David",
                         "lname": "Garcia",
-                        "img": "https://example.com/img2.jpg",
                         "special": "Environmental Policy Expert"
                     }
                 ]
@@ -92,14 +86,12 @@
                         "id": "3",
                         "fname": "Dr. Mohammed",
                         "lname": "Khan",
-                        "img": "https://example.com/img3.jpg",
                         "special": "Solar Energy Researcher"
                     },
                     {
                         "id": "4",
                         "fname": "Dr. Anna",
                         "lname": "Lee",
-                        "img": "https://example.com/img4.jpg",
                         "special": "Sustainable Energy Innovator"
                     }
                 ]
@@ -125,14 +117,12 @@
                         "id": "1",
                         "fname": "Dr. David",
                         "lname": "Johnson",
-                        "img": "https://example.com/img1.jpg",
                         "special": "Astrophysicist"
                     },
                     {
                         "id": "2",
                         "fname": "Dr. Maria",
                         "lname": "Garcia",
-                        "img": "https://example.com/img2.jpg",
                         "special": "Spacecraft Engineer"
                     }
                 ]
@@ -146,14 +136,12 @@
                         "id": "3",
                         "fname": "Dr. James",
                         "lname": "Brown",
-                        "img": "https://example.com/img3.jpg",
                         "special": "Planetary Scientist"
                     },
                     {
                         "id": "4",
                         "fname": "Dr. Emily",
                         "lname": "Smith",
-                        "img": "https://example.com/img4.jpg",
                         "special": "Space Medicine Researcher"
                     }
                 ]
