@@ -98,7 +98,7 @@
     width: 30rem;
 }
 
-#joinUsButton, #submit, #loginButton,#addSchedule, #editSchedule, #deleteSchedule, #cancelSchedule, #submitSchedule,#addPaper{
+#joinUsButton, #submit, #loginButton,#addSchedule, #editSchedule, #deleteSchedule, #cancelSchedule, #submitSchedule,#addPaper, #reviewPaper, #cancelReview, #submitReview{
     background-color: #ffffff;
     /* border: 2px solid #01044A; */
     padding: 0.6rem 4rem;
@@ -659,11 +659,15 @@
 
 }
 
+.paperCard {
+    height: auto;
+}
+
 .scheduleCard h4 {
     margin-bottom: 0.5rem;
 }
 
-.scheduleTitle, .scheduleBrief {
+.scheduleTitle, .scheduleBrief, .paperTitle {
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -714,7 +718,7 @@
     color: #455A64;
 }
 
-.locationAndTime, .sessions{
+.locationAndTime, .sessions, .paperAuthours, .paperAbstractTitle{
     color: #C850C0;
     margin-bottom: 0.5rem;
 }
@@ -750,7 +754,7 @@
     margin: 0rem;
 }
 
-#editSchedule, #deleteSchedule{
+#editSchedule, #deleteSchedule, #reviewPaper{
     padding: 0.3rem 4rem;
     font-size: 0.95rem;
 }

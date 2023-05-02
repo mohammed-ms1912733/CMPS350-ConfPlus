@@ -4,7 +4,7 @@ const SCHEDULES_URL = "api/schedules";
 const PRESENTERS_URL = "api/presenters";
 const DATES_URL = "api/dates";
 const LOCATIONS_URL = "api/locations";
-// const PAPERS_URL = "api/informations";
+const PAPERS_URL = "api/papers";
 
 // console.log("body");
 
@@ -48,11 +48,20 @@ async function getLocations() {
     return locations;
 }
 
-// async function getPapers() {
-//     const response = await fetch(PAPERS_URL);
-//     const papers = await response.json();
-//     return papers;
-// }
+async function getPapers() {
+    const response = await fetch(PAPERS_URL);
+    const papers = await response.json();
+    return papers;
+}
+
+async function addReview(review, id) {
+    const response = await fetch(`${PAPERS_URL}/${id}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(review),
+    });
+    return await response.json();
+}
 
 //login button
 const loginBtn = document.querySelector("#loginButton");
@@ -167,6 +176,14 @@ async function loadSchedules() {
     });
 }
 
+async function loadSchedulesForMain() {
+    const schedules = await getSchedules();
+    const schedulesContainer = document.querySelector(".conferenceCards");
+    schedules.forEach((schedule) => {
+        schedulesContainer.innerHTML += scheduleTemplateForMain(schedule);
+    });
+}
+
 async function displayCards(schedules) {
     const schedulesContainer = document.querySelector(".panelView");
 
@@ -242,6 +259,62 @@ function scheduleTemplate(schedule) {
     `;
 }
 
+function scheduleTemplateForMain(schedule) {
+    let sessionHTML = "";
+    let presenterHTML = "";
+    let i = 0;
+
+    schedule.sessions.forEach((session) => {
+        presenterHTML = "";
+
+        session.presenters.forEach((presenter) => {
+            presenterHTML += `<div class="presenter">
+            <p class="presenterName">${presenter.fname} ${presenter.lname}</p>
+            <p class="presenterTitle">${presenter.special}</p>
+          </div>`;
+        });
+
+        sessionHTML += `<div class="session">
+        <h4 class="sessionNumber">Session :${(i += 1)}</h4>
+        <div class="timeToContainer">
+          <h4 class="toAndFromTime">Time:</h4>
+          <p class="fromTimeTitle">from:</p>
+          <p class="fromTime">${session.from}</p>
+          <p class="toTimeTitle">to:</p>
+          <p class="toTime">${session.to}</p>
+        </div>
+        <h4 class="presentersTitle">Presenters:</h4>
+        <div class="presentersContainer">
+          <!-- presenters go here -->
+            ${presenterHTML}
+        </div>
+      </div>`;
+    });
+
+    return `
+    <div class="scheduleCardBackGround">
+    <div class="scheduleCard">
+      <h2 class="scheduleTitle">${schedule.title}</h2>
+      <p class="scheduleBrief">${schedule.brief}</p>
+      <h3 class="locationAndTime">Location & Time:</h3>
+      <div class="locationContainer">
+        <img src="./images/location-pin.png" alt="" class="locationPin" />
+        <p class="location">${schedule.location}</p>
+      </div>
+      <div class="dateContainer">
+        <img src="./images/calendar.png" alt="" class="calendarPin" />
+        <p class="date">${schedule.date}</p>
+      </div>
+      <h3 class="sessions">Sessions:</h3>
+      <div class="sessionsContainer">
+        <!-- sessions go here -->
+        ${sessionHTML}
+      </div>
+    </div>
+  </div>
+    `;
+}
+
 //adding a schedule
 if (window.location.pathname === "/addSchedulerForm.html") {
     document.addEventListener("DOMContentLoaded", async () => {
@@ -289,29 +362,6 @@ if (window.location.pathname === "/addSchedulerForm.html") {
                 }
             }
         });
-
-        // const presentersNumberSelect = document.querySelector("#noOfPresenters");
-        // presentersNumberSelect.addEventListener("change", (e) => {
-        //     const selectedPresenters = parseInt(e.target.value);
-        //     const existingPresenters = document.querySelectorAll('.editorPresenter').length;
-
-        //     if (selectedPresenters > existingPresenters) {
-        //         // Add more presenter elements
-        //         for (let i = existingPresenters + 1; i <= selectedPresenters; i++) {
-        //             generatePresenterHTML(i);
-        //         }
-        //     }
-
-        //     else if (selectedPresenters < existingPresenters) {
-        //         // Remove extra presenter elements
-        //         const presentersToRemove = existingPresenters - selectedPresenters;
-        //         const presenterElements = document.querySelectorAll('.editorPresenter');
-        //         for (let i = existingPresenters - 1; i >= selectedPresenters; i--) {
-        //             presenterElements[i].remove();
-        //         }
-        //     }
-
-        // });
 
         const editorSessionsContainer = document.querySelector(
             ".editorSessionsContainer"
@@ -445,9 +495,62 @@ if (window.location.pathname === "/ReviewerPanel.html") {
             userLogo.innerHTML = `<img src="./images/reviewerMaleLogo.png" alt="" class="userLogo" />`;
         }
     });
+
+    displayPapers();
 }
 
-function paperTemplete(paper) {
+// function paperTemplete(paper) {
+//     let paperAuthors = "";
+//     let i = 0;
+//     paper.authors.forEach((author) => {
+//         paperAuthors += `
+//         <div class="author">
+//           <p class ="authorNumber"> Author ${i + 1}</p>
+//           <p class ="paperAuthourName"> ${author.firstName} ${
+//             author.lastName
+//         }</p>
+//           <p class="paperAuthorEmail">  ${author.email}  </p>
+//           <p class ="paperAffilition">  ${author.affiliation}</p>
+//         </div>
+//         `;
+//         i++;
+//     });
+
+//     return `
+//     <div class="scheduleCardBackGround">
+//     <div class="scheduleCard">
+//       <h2 class="paperTitle">${paper.title}</h2>
+//       <h3 class="paperAbstractTitle">Abstract:</h3>
+//       <p class="paperAbstract">${paper.abstract} </p>
+//       <h3 class="paperAuthours">Authors:</h3>
+//         ${paperAuthors}
+//       </div>
+//     </div>
+
+//     `;
+// }
+
+function paperTem(paper) {
+    // <div class="scheduleCardBackGround">
+    //     <div class="scheduleCard paperCard">
+    //       <h2 class="paperTitle">Save the turtles</h2>
+    //       <h3 class="paperAbstractTitle">Abstract:</h3>
+    //       <p class="paperAbstract">Abstracted papers </p>
+    //       <h3 class="paperAuthours">Authors:</h3>
+    //       <div class="author">
+    //         <p class ="authorNumber"> Author: </p>
+    //         <p class ="paperAuthourName"> Name: </p>
+    //         <p class="paperAuthorEmail">  Email:  </p>
+    //         <p class ="paperAffilition">  Affiliation: </p>
+
+    //       <div class="scheduleButtonContainer">
+    //         <div id="editScheduleBackground" class="buttonBackground">
+    //           <a href="" id="reviewPaper">REVIEW</a>
+    //       </div>
+    //       </div>
+    //     </div>
+    //   </div>
+
     let paperAuthors = "";
     let i = 0;
     paper.authors.forEach((author) => {
@@ -466,16 +569,22 @@ function paperTemplete(paper) {
 
     return `
     <div class="scheduleCardBackGround">
-    <div class="scheduleCard">
-      <h2 class="paperTitle">${paper.title}</h2>
-      <h3 class="paperAbstractTitle">Abstract:</h3>
-      <p class="paperAbstract">${paper.abstract} </p>
-      <h3 class="paperAuthours">Authors:</h3>
-        ${paperAuthors}
-      </div>
-    </div>
-    
-    `;
+        <div class="scheduleCard paperCard">
+          <h2 class="paperTitle">${paper.title}</h2>
+          <h3 class="paperAbstractTitle">Abstract:</h3>
+          <p class="paperAbstract">${paper.abstract} </p>
+          <h3 class="paperAuthours">Authors:</h3>
+            ${paperAuthors}
+            
+
+            <div class="scheduleButtonContainer">
+            <div id="editScheduleBackground" class="buttonBackground">
+              <a href="#" id="reviewPaper" onclick = reviewPaperDirection(${paper.id})>REVIEW</a>
+          </div>
+          </div>
+            </div>
+            </div>
+            `;
 }
 
 async function displayPapers() {
@@ -483,10 +592,39 @@ async function displayPapers() {
     const papersContainer = document.querySelector(".panelView");
 
     papers.forEach((paper) => {
-        papersContainer.innerHTML += paperTemplete(paper);
+        papersContainer.innerHTML += paperTem(paper);
     });
 }
 
+async function reviewPaperDirection(id) {
+    window.location.href = `./reviewPaperForm.html`;
+    localStorage.paperID = id;
+}
+
+if(window.location.pathname === "/reviewPaperForm.html"){
+    document.addEventListener("DOMContentLoaded", async () => {
+        displayUserInfo();
+        const submitBtn = document.querySelector("#submitReview");
+        submitBtn.addEventListener("click", async (e) => {
+            const contribution = document.querySelector("#contribution").value;
+            const evaluation = document.querySelector("#evaluation").value;
+            const strenghts = document.querySelector("#strenghts").value;
+            const weakness = document.querySelector("#weakness").value;
+
+            let review = {
+                contribution: contribution,
+                evaluation: evaluation,
+                strenghts: strenghts,
+                weakness: weakness,
+            }
+
+            const paperID = localStorage.paperID;
+            addReview(review, paperID);
+            window.location.href = `./ReviewerPanel.html`;
+
+        });
+    });
+}
 
 if (window.location.pathname === "/AuthorPanel.html") {
     document.addEventListener("DOMContentLoaded", async () => {
@@ -502,15 +640,11 @@ if (window.location.pathname === "/AuthorPanel.html") {
 
         const papers = await getPapers();
         console.log(papers);
-
     });
 }
 
 if (window.location.pathname === "/index.html") {
     document.addEventListener("DOMContentLoaded", async () => {
-        
+        loadSchedulesForMain();
     });
 }
-
-
-

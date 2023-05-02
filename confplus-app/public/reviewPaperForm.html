@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles\styles.css" />
+
+  <title>Review the paper</title>
+</head>
+
+<body class="panelBody">
+  <div class="panelTopPart">
+    <div class="userInformationContainer">
+      <div class="userPicContainer">
+        
+      </div>
+      <div class="userInfromation">
+        <p class="userName"></p>
+        <div class="roleAndActivity">
+          <p class="role">Reviewer</p>
+          <img src="./images/Active.svg" alt="" class="userActivity" />
+        </div>
+      </div>
+    </div>
+
+    <h2 class="addScheduleTitle">Review the paper</h2>
+
+    <!-- <div id="addScheduleBackground" class="buttonBackground">
+        <a href="" id="addSchedule">Add a Schedule</a>
+      </div> -->
+
+    <a href="./index.html" class="logoutLogoContainer">
+      <img src="./images/newNewlogout.png" alt="" class="logoutLogo" /></a>
+  </div>
+  <div class="editorPanelView">
+    <h2>Review your papers down below: </h2>
+  </div>
+  </div>
+  <div class="editorPresentersContainer">
+    <!-- presenters go here -->
+    <div class="editorPresenter">
+      <div class="editorInputContainer">
+        <label for="choosePresenter">paper contribution:</label>
+        <select name="choosePresenter" id="contribution">
+          <option value="5: a major and significant contribution">5: a major and significant contribution</option>
+          <option value="4: a clear contribution">4: a clear contribution</option>
+          <option value="3: minor contribution">3: minor contribution</option>
+          <option value="2: no obvious contribution">2: no obvious contribution</option>
+          <option value="1: no obvious contribution">1: no obvious contribution</option>
+
+        </select>
+      </div>
+    </div>
+
+    <div class="editorPresenter">
+      <div class="editorInputContainer">
+        <label for="choosePresenter">Overall evaluation:</label>
+        <select name="choosePresenter" id="evaluation">
+          <option value="strong accept">2: Strong accept</option>
+          <option value="accept">1: accept</option>
+          <option value="borderline">0: borderline</option>
+          <option value="reject">-1: reject</option>
+          <option value="strong reject">-2: strong reject</option>
+        </select>
+      </div>
+    </div>
+
+      </div>
+      </div>
+  </div>
+
+  <div class="multiline"> 
+    <div class="editorInputContainer">
+      <label for="scheduleBrief">Paper strenghts:</label>
+      <textarea name="scheduleBrief" id="strenghts" cols="40" rows="8"
+        placeholder="Write the paper's strenghts"></textarea>
+    </div>
+    <div class="editorInputContainer">
+      <label for="scheduleBrief">Paper weakness:</label>
+      <textarea name="scheduleBrief" id="weakness" cols="40" rows="8"
+        placeholder="Write the paper's weakness"></textarea>
+    </div>
+  </div>
+
+  <div class="submitScheduleButtonContainer">
+    <div id="cancelScheduleBackground" class="buttonBackground">
+      <a href="./ReviewerPanel.html" id="cancelReview">Cancel</a>
+    </div>
+
+    <div id="submitScheduleBackground" class="buttonBackground">
+      <a href="#" id="submitReview">Submit</a>
+    </div>
+  </div>
+
+  <!-- js link -->
+  <script src="script\index.js"></script>
+</body>
+
+</html>
